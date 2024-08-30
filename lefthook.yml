@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      run: pnpm lint
+    ts-check:
+      run: pnpm tsc
+    test:
+      run: pnpm test --watch=false
+
+commit-msg:
+  commands:
+    commit-lint:
+      run: yarn commitlint --edit {1}
