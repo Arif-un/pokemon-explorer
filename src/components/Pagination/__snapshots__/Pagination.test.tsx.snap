@@ -7,7 +7,7 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when a 
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       disabled=""
       type="button"
     >
@@ -30,19 +30,19 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when a 
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       1
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       2
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       3
@@ -81,14 +81,14 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when a 
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       10
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       Next 
@@ -120,7 +120,7 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when ne
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       disabled=""
       type="button"
     >
@@ -143,19 +143,19 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when ne
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       1
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       2
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       3
@@ -194,14 +194,14 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when ne
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       10
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       Next 
@@ -233,7 +233,7 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when pr
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       <svg
@@ -255,7 +255,7 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when pr
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       1
@@ -294,19 +294,19 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when pr
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       3
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       4
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       5
@@ -345,14 +345,14 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when pr
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       10
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       Next 
@@ -384,7 +384,7 @@ exports[`Pagination Component > disables the next button when on the last page 1
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       <svg
@@ -406,7 +406,7 @@ exports[`Pagination Component > disables the next button when on the last page 1
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       1
@@ -445,26 +445,26 @@ exports[`Pagination Component > disables the next button when on the last page 1
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       8
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       9
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       10
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       disabled=""
       type="button"
     >
@@ -497,7 +497,7 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       disabled=""
       type="button"
     >
@@ -520,19 +520,19 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       1
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       2
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       3
@@ -571,14 +571,14 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       10
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       Next 
@@ -610,7 +610,7 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       <svg
@@ -632,7 +632,7 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       1
@@ -671,26 +671,26 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       8
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       9
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       10
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       disabled=""
       type="button"
     >
@@ -723,7 +723,7 @@ exports[`Pagination Component > renders ellipsis on both sides when currentPage 
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       <svg
@@ -745,7 +745,7 @@ exports[`Pagination Component > renders ellipsis on both sides when currentPage 
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       1
@@ -784,19 +784,19 @@ exports[`Pagination Component > renders ellipsis on both sides when currentPage 
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       5
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       6
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       7
@@ -835,14 +835,14 @@ exports[`Pagination Component > renders ellipsis on both sides when currentPage 
       </svg>
     </span>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       10
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       Next 
@@ -874,7 +874,7 @@ exports[`Pagination Component > renders the correct number of page buttons when 
   >
     <button
       aria-label="Previous page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       disabled=""
       type="button"
     >
@@ -897,32 +897,32 @@ exports[`Pagination Component > renders the correct number of page buttons when 
        Prev
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-blue-600 text-white hover:bg-blue-700 border-blue-700 rounded-full font-semibold"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
       type="button"
     >
       1
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       2
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       3
     </button>
     <button
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       4
     </button>
     <button
       aria-label="Next page"
-      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 rounded-full"
       type="button"
     >
       Next 

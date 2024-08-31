@@ -5,10 +5,12 @@ pre-commit:
       run: pnpm lint
     ts-check:
       run: pnpm tsc
+    format:
+      run: pnpm format
     test:
-      run: pnpm test --watch=false
+      run: pnpm test
 
 commit-msg:
   commands:
     commit-lint:
-      run: yarn commitlint --edit {1}
+      run: pnpm commitlint --edit {1}
