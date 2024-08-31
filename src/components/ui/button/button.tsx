@@ -3,12 +3,15 @@ import { forwardRef } from 'react'
 import classNames from 'classnames'
 
 const buttonClasses = {
-  base: 'px-4 py-2 rounded-md',
-  icon: 'w-11 h-11 flex justify-center items-center rounded-full',
+  focusVisible: 'focus-visible:outline-1 outline-blue-500 outline-offset-1',
+  base: 'px-4 py-2 flex items-center h-11 min-w-11 justify-center',
+  icon: 'size-11 flex justify-center items-center rounded-full',
   rounded: 'rounded-full',
+  disabled: 'disabled:opacity-50 bg-slate-50',
   variants: {
     default:
-      'bg-slate-100 text-slate-900 border-slate-300 dark:bg-slate-800 dark:text-white border dark:border-slate-700'
+      'bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800',
+    primary: 'bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700'
   }
 }
 
@@ -19,20 +22,31 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, icon = false, variant = 'default', rounded = false, ...props }, ref) => {
+  (
+    { className, icon = false, variant = 'default', rounded = false, type = 'button', ...props },
+    ref
+  ) => {
     const classes = icon ? buttonClasses.icon : buttonClasses.base
     const variantClass = buttonClasses.variants[variant]
     const roundedClass = rounded ? buttonClasses.rounded : ''
 
     return (
       <button
-        className={classNames(classes, variantClass, roundedClass, className)}
+        type={type}
+        className={classNames(
+          classes,
+          buttonClasses.focusVisible,
+          variantClass,
+          roundedClass,
+          className
+        )}
         ref={ref}
         {...props}
       />
     )
   }
 )
+
 Button.displayName = 'Button'
 
 export default Button
