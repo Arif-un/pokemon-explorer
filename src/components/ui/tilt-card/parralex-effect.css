@@ -1,0 +1,10 @@
+.parallax-effect-glare-scale {
+  transform-style: preserve-3d;
+  box-shadow:
+    0 3px 5px 3px #9999990f inset,
+    0 5px 15px 5px #9999990f;
+}
+
+.parallax-effect-glare-scale .popup-element {
+  transform: translateZ(60px);
+}
