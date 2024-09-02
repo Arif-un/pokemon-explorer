@@ -6,7 +6,11 @@ export default {
     fontFamily: {
       sans: ['Suse', 'sans-serif']
     },
-    extend: {}
+    extend: {
+      transitionProperty: {
+        offset: 'outline-offset'
+      }
+    }
   },
   plugins: []
 }
