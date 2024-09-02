@@ -10,11 +10,13 @@
     "preview": "vite preview",
     "test": "vitest --watch=false",
     "test:watch": "vitest",
+    "test:cov": "vitest run --coverage",
     "format": "prettier --write .",
     "pre-commit": "lefthook run pre-commit"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.53.1",
+    "@tanstack/react-query-devtools": "^5.53.1",
     "@tanstack/react-router": "^1.51.6",
     "classnames": "^2.5.1",
     "framer-motion": "^11.3.31",
@@ -40,6 +42,7 @@
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.0.5",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.9.1",
     "eslint-import-resolver-typescript": "^3.6.3",
