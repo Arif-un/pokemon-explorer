@@ -29,11 +29,11 @@ function PokemonPreviewCard({ name }: PokemonPreviewCardProps) {
 
   return (
     <Link
-      href="/pokemon-details"
+      to={`pokemon-details/${name}`}
       aria-label={`View details of ${name}`}
       className="inline-block focus-visible:outline outline-yellow-500 outline-2 focus-visible:outline-offset-8 outline-offset-0  rounded-3xl transition-offset duration-200 motion-reduce:duration-0"
     >
-      <TiltCard>
+      <TiltCard className="inline-flex flex-col justify-center group cursor-pointer bg-slate-800 dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border">
         <CardImage
           src={pokemonImage}
           fallbackImg={pokemonLoader}
