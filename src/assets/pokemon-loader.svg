@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none; display: block; margin: auto;">
+  <!-- Outer spinning Poké Ball -->
+  <g>
+    <circle cx="50" cy="50" r="45" fill="#d81b26" />
+    <path fill="#ffffff" d="M50 5A45 45 0 0 1 95 50H5A45 45 0 0 1 50 5z" />
+    <path fill="#3d3d3d" d="M5 50H95" />
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#3d3d3d" stroke-width="4" />
+    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1.2s" repeatCount="indefinite" keySplines="0.42 0 0.58 1" calcMode="spline" />
+  </g>
+
+  <!-- Central button with pulse and glow effects -->
+  <g>
+    <circle cx="50" cy="50" r="10" fill="#ffffff" stroke="#3d3d3d" stroke-width="4">
+      <animate attributeName="r" from="8" to="10" dur="0.6s" repeatCount="indefinite" values="8;10;8" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" calcMode="spline" />
+    </circle>
+    <circle cx="50" cy="50" r="6" fill="#3d3d3d">
+      <animate attributeName="r" from="4" to="6" dur="0.6s" repeatCount="indefinite" values="4;6;4" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" calcMode="spline" />
+    </circle>
+    <circle cx="50" cy="50" r="16" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6">
+      <animate attributeName="r" from="12" to="16" dur="1.2s" repeatCount="indefinite" values="12;16;12" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" calcMode="spline" />
+      <animate attributeName="opacity" from="0.6" to="0.2" dur="1.2s" repeatCount="indefinite" values="0.6;0.2;0.6" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" calcMode="spline" />
+    </circle>
+  </g>
+</svg>
