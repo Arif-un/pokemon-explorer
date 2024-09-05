@@ -5,62 +5,66 @@ exports[`PokemonPreviewCard > renders correctly while loading 1`] = `
   <a
     aria-label="View details of Pikachu"
     class="inline-block focus-visible:outline outline-yellow-500 outline-2 focus-visible:outline-offset-8 outline-offset-0  rounded-3xl transition-offset duration-200 motion-reduce:duration-0"
-    href="/pokemon-details"
+    to="pokemon-details/Pikachu"
   >
     <div
-      class="parallax-effect-glare-scale inline-flex flex-col justify-center group cursor-pointer bg-slate-800 dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
+      class="inner-glow bg-slate-800 inline-flex flex-col justify-center group cursor-pointer  dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
     >
-      <figure
-        class="popup-element flex items-center justify-center"
+      <div
+        class="parallax-effect-glare-scale "
       >
-        <div
-          class="relative w-60 h-60 -mt-16"
+        <figure
+          class="popup-element flex items-center justify-center"
         >
-          <img
-            alt="pokemon loading image"
-            class="w-40 m-auto"
-            src="/src/assets/pokemon-loader.svg"
+          <div
+            class="relative w-60 h-60 -mt-16"
+          >
+            <img
+              alt="pokemon loading image"
+              class="w-40 m-auto"
+              src="/src/assets/pokemon-loader.svg"
+            />
+          </div>
+        </figure>
+        <div
+          class="flex items-center justify-center gap-2"
+        >
+          <h3
+            class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
+          >
+            Pikachu
+          </h3>
+          <svg
+            aria-hidden="true"
+            aria-label="navigate icon"
+            class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 7h10v10"
+            />
+            <path
+              d="M7 17 17 7"
+            />
+          </svg>
+        </div>
+        <div
+          class="glare-wrapper"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
+        >
+          <div
+            class="glare"
+            style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
           />
         </div>
-      </figure>
-      <div
-        class="flex items-center justify-center gap-2"
-      >
-        <h3
-          class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
-        >
-          Pikachu
-        </h3>
-        <svg
-          aria-hidden="true"
-          aria-label="navigate icon"
-          class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
-          fill="none"
-          height="24"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7 7h10v10"
-          />
-          <path
-            d="M7 17 17 7"
-          />
-        </svg>
-      </div>
-      <div
-        class="glare-wrapper"
-        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
-      >
-        <div
-          class="glare"
-          style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
-        />
       </div>
     </div>
   </a>
@@ -72,73 +76,77 @@ exports[`PokemonPreviewCard > renders correctly with long name 1`] = `
   <a
     aria-label="View details of PikachuPikachuPikachuPikachu"
     class="inline-block focus-visible:outline outline-yellow-500 outline-2 focus-visible:outline-offset-8 outline-offset-0  rounded-3xl transition-offset duration-200 motion-reduce:duration-0"
-    href="/pokemon-details"
+    to="pokemon-details/PikachuPikachuPikachuPikachu"
   >
     <div
-      class="parallax-effect-glare-scale inline-flex flex-col justify-center group cursor-pointer bg-slate-800 dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
+      class="inner-glow bg-slate-800 inline-flex flex-col justify-center group cursor-pointer  dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
     >
-      <figure
-        class="popup-element flex items-center justify-center"
+      <div
+        class="parallax-effect-glare-scale "
       >
-        <div
-          class="relative w-60 h-60 -mt-16"
+        <figure
+          class="popup-element flex items-center justify-center"
         >
-          <img
-            alt="PikachuPikachuPikachuPikachu image-backdrop"
-            class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
-            height="240"
-            loading="lazy"
-            src="https://example.com/shiny.png"
-            width="240"
-          />
-          <img
-            alt="PikachuPikachuPikachuPikachu image"
-            class="w-52 m-auto z-10 relative"
-            height="240"
-            loading="lazy"
-            src="https://example.com/shiny.png"
-            width="240"
+          <div
+            class="relative w-60 h-60 -mt-16"
+          >
+            <img
+              alt="PikachuPikachuPikachuPikachu image-backdrop"
+              class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
+              height="240"
+              loading="lazy"
+              src="https://example.com/shiny.png"
+              width="240"
+            />
+            <img
+              alt="PikachuPikachuPikachuPikachu image"
+              class="w-52 m-auto z-10 relative"
+              height="240"
+              loading="lazy"
+              src="https://example.com/shiny.png"
+              width="240"
+            />
+          </div>
+        </figure>
+        <div
+          class="flex items-center justify-center gap-2"
+        >
+          <h3
+            class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-base"
+          >
+            PikachuPikachuPikachuPikachu
+          </h3>
+          <svg
+            aria-hidden="true"
+            aria-label="navigate icon"
+            class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 7h10v10"
+            />
+            <path
+              d="M7 17 17 7"
+            />
+          </svg>
+        </div>
+        <div
+          class="glare-wrapper"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
+        >
+          <div
+            class="glare"
+            style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
           />
         </div>
-      </figure>
-      <div
-        class="flex items-center justify-center gap-2"
-      >
-        <h3
-          class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-base"
-        >
-          PikachuPikachuPikachuPikachu
-        </h3>
-        <svg
-          aria-hidden="true"
-          aria-label="navigate icon"
-          class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
-          fill="none"
-          height="24"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7 7h10v10"
-          />
-          <path
-            d="M7 17 17 7"
-          />
-        </svg>
-      </div>
-      <div
-        class="glare-wrapper"
-        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
-      >
-        <div
-          class="glare"
-          style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
-        />
       </div>
     </div>
   </a>
@@ -150,73 +158,77 @@ exports[`PokemonPreviewCard > renders correctly with pokemon data 1`] = `
   <a
     aria-label="View details of Charizard"
     class="inline-block focus-visible:outline outline-yellow-500 outline-2 focus-visible:outline-offset-8 outline-offset-0  rounded-3xl transition-offset duration-200 motion-reduce:duration-0"
-    href="/pokemon-details"
+    to="pokemon-details/Charizard"
   >
     <div
-      class="parallax-effect-glare-scale inline-flex flex-col justify-center group cursor-pointer bg-slate-800 dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
+      class="inner-glow bg-slate-800 inline-flex flex-col justify-center group cursor-pointer  dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
     >
-      <figure
-        class="popup-element flex items-center justify-center"
+      <div
+        class="parallax-effect-glare-scale "
       >
-        <div
-          class="relative w-60 h-60 -mt-16"
+        <figure
+          class="popup-element flex items-center justify-center"
         >
-          <img
-            alt="Charizard image-backdrop"
-            class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
-            height="240"
-            loading="lazy"
-            src="https://example.com/shiny.png"
-            width="240"
-          />
-          <img
-            alt="Charizard image"
-            class="w-52 m-auto z-10 relative"
-            height="240"
-            loading="lazy"
-            src="https://example.com/shiny.png"
-            width="240"
+          <div
+            class="relative w-60 h-60 -mt-16"
+          >
+            <img
+              alt="Charizard image-backdrop"
+              class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
+              height="240"
+              loading="lazy"
+              src="https://example.com/shiny.png"
+              width="240"
+            />
+            <img
+              alt="Charizard image"
+              class="w-52 m-auto z-10 relative"
+              height="240"
+              loading="lazy"
+              src="https://example.com/shiny.png"
+              width="240"
+            />
+          </div>
+        </figure>
+        <div
+          class="flex items-center justify-center gap-2"
+        >
+          <h3
+            class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
+          >
+            Charizard
+          </h3>
+          <svg
+            aria-hidden="true"
+            aria-label="navigate icon"
+            class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 7h10v10"
+            />
+            <path
+              d="M7 17 17 7"
+            />
+          </svg>
+        </div>
+        <div
+          class="glare-wrapper"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
+        >
+          <div
+            class="glare"
+            style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
           />
         </div>
-      </figure>
-      <div
-        class="flex items-center justify-center gap-2"
-      >
-        <h3
-          class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
-        >
-          Charizard
-        </h3>
-        <svg
-          aria-hidden="true"
-          aria-label="navigate icon"
-          class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
-          fill="none"
-          height="24"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7 7h10v10"
-          />
-          <path
-            d="M7 17 17 7"
-          />
-        </svg>
-      </div>
-      <div
-        class="glare-wrapper"
-        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
-      >
-        <div
-          class="glare"
-          style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
-        />
       </div>
     </div>
   </a>

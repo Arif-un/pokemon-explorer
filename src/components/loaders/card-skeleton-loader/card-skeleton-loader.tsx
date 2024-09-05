@@ -9,7 +9,7 @@ export default function CardSkeletonLoader({ totalCard = 1 }: CardSkeletonLoader
     <div
       key={index}
       data-testid="card-skeleton-loader"
-      className="w-60 h-64 m-3 flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
+      className="w-60 h-[258px] flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
     >
       <PokeballSkeleton />
     </div>

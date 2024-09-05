@@ -1,0 +1,90 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Abilities Component > renders an empty list when no abilities are provided 1`] = `
+<DocumentFragment>
+  <section
+    class="my-4"
+  >
+    <div>
+      <h2
+        class="text-slate-600 dark:text-slate-500 mb-1"
+      >
+        Abilities
+      </h2>
+      <ul
+        aria-label="List of Pokemon Abilities"
+        class="flex gap-3 w-[370px] flex-wrap"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Abilities Component > renders correctly with abilities 1`] = `
+<DocumentFragment>
+  <section
+    class="my-4"
+  >
+    <div>
+      <h2
+        class="text-slate-600 dark:text-slate-500 mb-1"
+      >
+        Abilities
+      </h2>
+      <ul
+        aria-label="List of Pokemon Abilities"
+        class="flex gap-3 w-[370px] flex-wrap"
+      >
+        <li
+          class="capitalize flex gap-2 items-center py-1 px-3 text-indigo-700 bg-indigo-200 dark:bg-indigo-900 dark:text-indigo-100 rounded-full font-semibold"
+        >
+          <svg
+            class="size-5"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598ZM12 13.5L14.9389 15.0451L14.3776 11.7725L16.7553 9.45492L13.4695 8.97746L12 6L10.5305 8.97746L7.24472 9.45492L9.62236 11.7725L9.06107 15.0451L12 13.5Z"
+            />
+          </svg>
+          overgrow
+        </li>
+        <li
+          class="capitalize flex gap-2 items-center py-1 px-3 text-indigo-700 bg-indigo-200 dark:bg-indigo-900 dark:text-indigo-100 rounded-full font-semibold"
+        >
+          <svg
+            class="size-5"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598ZM12 13.5L14.9389 15.0451L14.3776 11.7725L16.7553 9.45492L13.4695 8.97746L12 6L10.5305 8.97746L7.24472 9.45492L9.62236 11.7725L9.06107 15.0451L12 13.5Z"
+            />
+          </svg>
+          chlorophyll
+        </li>
+      </ul>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Abilities Component > renders nothing while navigating 1`] = `
+<DocumentFragment>
+  <section
+    class="my-4"
+  >
+    <div />
+  </section>
+</DocumentFragment>
+`;

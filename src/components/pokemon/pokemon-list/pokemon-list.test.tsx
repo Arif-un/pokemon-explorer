@@ -22,20 +22,14 @@ describe('PokemonList', () => {
     { name: 'squirtle', url: 'https://pokeapi.co/api/v2/pokemon/7/' }
   ]
 
-  const mockPokemonDetails = {
-    sprites: {
-      other: {
-        'official-artwork': {
-          front_shiny: 'https://example.com/pokemon.png'
-        }
-      }
-    }
-  }
+  const mockPokemonDetails = 'https://example.com/pokemon.png'
 
   beforeEach(() => {
     vi.mocked(usePokemonDetailsHook.usePokemonDetails).mockReturnValue({
-      pokemonDetails: mockPokemonDetails,
-      isLoading: false
+      data: mockPokemonDetails,
+      isLoading: false,
+      isError: false,
+      error: null
     })
   })
 
@@ -70,7 +64,10 @@ describe('PokemonList', () => {
   it('calls usePokemonDetails with correct pokemon names', () => {
     render(<PokemonList pokemons={mockPokemons} isLoading={false} limit={3} />)
     mockPokemons.forEach(pokemon => {
-      expect(usePokemonDetailsHook.usePokemonDetails).toHaveBeenCalledWith(pokemon.name)
+      expect(usePokemonDetailsHook.usePokemonDetails).toHaveBeenCalledWith(
+        pokemon.name,
+        expect.any(Function)
+      )
     })
   })
 

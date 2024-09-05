@@ -3,7 +3,7 @@
 exports[`PokemonList > renders empty list when no pokemons are provided 1`] = `
 <section
   aria-label="List of Pokémon"
-  class="mt-56"
+  class="mt-56 p-2"
 >
   <ul
     class="flex justify-center gap-x-10 gap-y-28 flex-wrap"
@@ -15,13 +15,13 @@ exports[`PokemonList > renders loading state correctly 1`] = `
 <DocumentFragment>
   <section
     aria-label="List of Pokémon"
-    class="mt-56"
+    class="mt-56 p-2"
   >
     <ul
       class="flex justify-center gap-x-10 gap-y-28 flex-wrap"
     >
       <div
-        class="w-60 h-64 m-3 flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
+        class="w-60 h-[258px] flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
         data-testid="card-skeleton-loader"
       >
         <svg
@@ -37,7 +37,7 @@ exports[`PokemonList > renders loading state correctly 1`] = `
         </svg>
       </div>
       <div
-        class="w-60 h-64 m-3 flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
+        class="w-60 h-[258px] flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
         data-testid="card-skeleton-loader"
       >
         <svg
@@ -53,7 +53,7 @@ exports[`PokemonList > renders loading state correctly 1`] = `
         </svg>
       </div>
       <div
-        class="w-60 h-64 m-3 flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
+        class="w-60 h-[258px] flex justify-center items-center shadow border border-slate-300 text-slate-400 bg-slate-300 dark:bg-slate-800 dark:text-slate-950 dark:border-slate-700 rounded-3xl animate-pulse "
         data-testid="card-skeleton-loader"
       >
         <svg
@@ -77,7 +77,7 @@ exports[`PokemonList > renders pokemon list correctly 1`] = `
 <DocumentFragment>
   <section
     aria-label="List of Pokémon"
-    class="mt-56"
+    class="mt-56 p-2"
   >
     <ul
       class="flex justify-center gap-x-10 gap-y-28 flex-wrap"
@@ -88,73 +88,77 @@ exports[`PokemonList > renders pokemon list correctly 1`] = `
         <a
           aria-label="View details of bulbasaur"
           class="inline-block focus-visible:outline outline-yellow-500 outline-2 focus-visible:outline-offset-8 outline-offset-0  rounded-3xl transition-offset duration-200 motion-reduce:duration-0"
-          href="/pokemon-details"
+          to="pokemon-details/bulbasaur"
         >
           <div
-            class="parallax-effect-glare-scale inline-flex flex-col justify-center group cursor-pointer bg-slate-800 dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
+            class="inner-glow bg-slate-800 inline-flex flex-col justify-center group cursor-pointer  dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
           >
-            <figure
-              class="popup-element flex items-center justify-center"
+            <div
+              class="parallax-effect-glare-scale "
             >
-              <div
-                class="relative w-60 h-60 -mt-16"
+              <figure
+                class="popup-element flex items-center justify-center"
               >
-                <img
-                  alt="bulbasaur image-backdrop"
-                  class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
-                  height="240"
-                  loading="lazy"
-                  src="https://example.com/pokemon.png"
-                  width="240"
-                />
-                <img
-                  alt="bulbasaur image"
-                  class="w-52 m-auto z-10 relative"
-                  height="240"
-                  loading="lazy"
-                  src="https://example.com/pokemon.png"
-                  width="240"
+                <div
+                  class="relative w-60 h-60 -mt-16"
+                >
+                  <img
+                    alt="bulbasaur image-backdrop"
+                    class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
+                    height="240"
+                    loading="lazy"
+                    src="https://example.com/pokemon.png"
+                    width="240"
+                  />
+                  <img
+                    alt="bulbasaur image"
+                    class="w-52 m-auto z-10 relative"
+                    height="240"
+                    loading="lazy"
+                    src="https://example.com/pokemon.png"
+                    width="240"
+                  />
+                </div>
+              </figure>
+              <div
+                class="flex items-center justify-center gap-2"
+              >
+                <h3
+                  class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
+                >
+                  bulbasaur
+                </h3>
+                <svg
+                  aria-hidden="true"
+                  aria-label="navigate icon"
+                  class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 7h10v10"
+                  />
+                  <path
+                    d="M7 17 17 7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="glare-wrapper"
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
+              >
+                <div
+                  class="glare"
+                  style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
                 />
               </div>
-            </figure>
-            <div
-              class="flex items-center justify-center gap-2"
-            >
-              <h3
-                class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
-              >
-                bulbasaur
-              </h3>
-              <svg
-                aria-hidden="true"
-                aria-label="navigate icon"
-                class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
-                fill="none"
-                height="24"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7 7h10v10"
-                />
-                <path
-                  d="M7 17 17 7"
-                />
-              </svg>
-            </div>
-            <div
-              class="glare-wrapper"
-              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
-            >
-              <div
-                class="glare"
-                style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
-              />
             </div>
           </div>
         </a>
@@ -165,73 +169,77 @@ exports[`PokemonList > renders pokemon list correctly 1`] = `
         <a
           aria-label="View details of charmander"
           class="inline-block focus-visible:outline outline-yellow-500 outline-2 focus-visible:outline-offset-8 outline-offset-0  rounded-3xl transition-offset duration-200 motion-reduce:duration-0"
-          href="/pokemon-details"
+          to="pokemon-details/charmander"
         >
           <div
-            class="parallax-effect-glare-scale inline-flex flex-col justify-center group cursor-pointer bg-slate-800 dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
+            class="inner-glow bg-slate-800 inline-flex flex-col justify-center group cursor-pointer  dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
           >
-            <figure
-              class="popup-element flex items-center justify-center"
+            <div
+              class="parallax-effect-glare-scale "
             >
-              <div
-                class="relative w-60 h-60 -mt-16"
+              <figure
+                class="popup-element flex items-center justify-center"
               >
-                <img
-                  alt="charmander image-backdrop"
-                  class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
-                  height="240"
-                  loading="lazy"
-                  src="https://example.com/pokemon.png"
-                  width="240"
-                />
-                <img
-                  alt="charmander image"
-                  class="w-52 m-auto z-10 relative"
-                  height="240"
-                  loading="lazy"
-                  src="https://example.com/pokemon.png"
-                  width="240"
+                <div
+                  class="relative w-60 h-60 -mt-16"
+                >
+                  <img
+                    alt="charmander image-backdrop"
+                    class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
+                    height="240"
+                    loading="lazy"
+                    src="https://example.com/pokemon.png"
+                    width="240"
+                  />
+                  <img
+                    alt="charmander image"
+                    class="w-52 m-auto z-10 relative"
+                    height="240"
+                    loading="lazy"
+                    src="https://example.com/pokemon.png"
+                    width="240"
+                  />
+                </div>
+              </figure>
+              <div
+                class="flex items-center justify-center gap-2"
+              >
+                <h3
+                  class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
+                >
+                  charmander
+                </h3>
+                <svg
+                  aria-hidden="true"
+                  aria-label="navigate icon"
+                  class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 7h10v10"
+                  />
+                  <path
+                    d="M7 17 17 7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="glare-wrapper"
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
+              >
+                <div
+                  class="glare"
+                  style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
                 />
               </div>
-            </figure>
-            <div
-              class="flex items-center justify-center gap-2"
-            >
-              <h3
-                class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
-              >
-                charmander
-              </h3>
-              <svg
-                aria-hidden="true"
-                aria-label="navigate icon"
-                class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
-                fill="none"
-                height="24"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7 7h10v10"
-                />
-                <path
-                  d="M7 17 17 7"
-                />
-              </svg>
-            </div>
-            <div
-              class="glare-wrapper"
-              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
-            >
-              <div
-                class="glare"
-                style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
-              />
             </div>
           </div>
         </a>
@@ -242,73 +250,77 @@ exports[`PokemonList > renders pokemon list correctly 1`] = `
         <a
           aria-label="View details of squirtle"
           class="inline-block focus-visible:outline outline-yellow-500 outline-2 focus-visible:outline-offset-8 outline-offset-0  rounded-3xl transition-offset duration-200 motion-reduce:duration-0"
-          href="/pokemon-details"
+          to="pokemon-details/squirtle"
         >
           <div
-            class="parallax-effect-glare-scale inline-flex flex-col justify-center group cursor-pointer bg-slate-800 dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
+            class="inner-glow bg-slate-800 inline-flex flex-col justify-center group cursor-pointer  dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
           >
-            <figure
-              class="popup-element flex items-center justify-center"
+            <div
+              class="parallax-effect-glare-scale "
             >
-              <div
-                class="relative w-60 h-60 -mt-16"
+              <figure
+                class="popup-element flex items-center justify-center"
               >
-                <img
-                  alt="squirtle image-backdrop"
-                  class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
-                  height="240"
-                  loading="lazy"
-                  src="https://example.com/pokemon.png"
-                  width="240"
-                />
-                <img
-                  alt="squirtle image"
-                  class="w-52 m-auto z-10 relative"
-                  height="240"
-                  loading="lazy"
-                  src="https://example.com/pokemon.png"
-                  width="240"
+                <div
+                  class="relative w-60 h-60 -mt-16"
+                >
+                  <img
+                    alt="squirtle image-backdrop"
+                    class="blur-2xl w-52 absolute opacity-50 group-hover:opacity-90 m-auto inset-0 transition-opacity"
+                    height="240"
+                    loading="lazy"
+                    src="https://example.com/pokemon.png"
+                    width="240"
+                  />
+                  <img
+                    alt="squirtle image"
+                    class="w-52 m-auto z-10 relative"
+                    height="240"
+                    loading="lazy"
+                    src="https://example.com/pokemon.png"
+                    width="240"
+                  />
+                </div>
+              </figure>
+              <div
+                class="flex items-center justify-center gap-2"
+              >
+                <h3
+                  class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
+                >
+                  squirtle
+                </h3>
+                <svg
+                  aria-hidden="true"
+                  aria-label="navigate icon"
+                  class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 7h10v10"
+                  />
+                  <path
+                    d="M7 17 17 7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="glare-wrapper"
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
+              >
+                <div
+                  class="glare"
+                  style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
                 />
               </div>
-            </figure>
-            <div
-              class="flex items-center justify-center gap-2"
-            >
-              <h3
-                class="text-slate-300 group-hover:text-slate-50 dark:text-slate-400 dark:group-hover:text-slate-50 group-hover:underline capitalize text-center font-semibold my-5 text-xl"
-              >
-                squirtle
-              </h3>
-              <svg
-                aria-hidden="true"
-                aria-label="navigate icon"
-                class="lucide lucide-arrow-up-right opacity-0 size-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-hover:size-auto transition-transform text-slate-50 dark:text-slate-50"
-                fill="none"
-                height="24"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7 7h10v10"
-                />
-                <path
-                  d="M7 17 17 7"
-                />
-              </svg>
-            </div>
-            <div
-              class="glare-wrapper"
-              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; pointer-events: none;"
-            >
-              <div
-                class="glare"
-                style="position: absolute; top: 50%; left: 50%; transform-origin: 0% 0%; pointer-events: none; width: 0px; height: 0px;"
-              />
             </div>
           </div>
         </a>

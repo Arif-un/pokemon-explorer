@@ -15,21 +15,15 @@ vi.mock('@/hooks/use-pokemon-details', () => ({
   usePokemonDetails: vi.fn()
 }))
 
-const mockPokemonDetails = {
-  sprites: {
-    other: {
-      'official-artwork': {
-        front_shiny: 'https://example.com/shiny.png'
-      }
-    }
-  }
-}
+const mockPokemonDetails = 'https://example.com/shiny.png'
 
 describe('PokemonPreviewCard', () => {
   it('renders correctly while loading', () => {
     vi.mocked(usePokemonDetails).mockReturnValue({
-      pokemonDetails: undefined,
-      isLoading: true
+      data: undefined,
+      isLoading: true,
+      isError: false,
+      error: null
     })
     const { asFragment } = render(<PokemonPreviewCard name="Pikachu" />)
 
@@ -41,8 +35,10 @@ describe('PokemonPreviewCard', () => {
 
   it('renders correctly with pokemon data', () => {
     vi.mocked(usePokemonDetails).mockReturnValue({
-      pokemonDetails: mockPokemonDetails,
-      isLoading: false
+      data: mockPokemonDetails,
+      isLoading: false,
+      isError: false,
+      error: null
     })
 
     const { asFragment } = render(<PokemonPreviewCard name="Charizard" />)
@@ -58,8 +54,10 @@ describe('PokemonPreviewCard', () => {
 
   it('renders correctly with long name', () => {
     vi.mocked(usePokemonDetails).mockReturnValue({
-      pokemonDetails: mockPokemonDetails,
-      isLoading: false
+      data: mockPokemonDetails,
+      isLoading: false,
+      isError: false,
+      error: null
     })
 
     const longName = 'PikachuPikachuPikachuPikachu'

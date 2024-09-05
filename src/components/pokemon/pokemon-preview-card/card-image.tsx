@@ -25,7 +25,7 @@ export default function CardImage({ src, alt, fallbackImg, isLoading }: CardImag
             />
             <motion.img
               loading="lazy"
-              layoutId="pokemon-image"
+              layoutId={`${alt} pokemon`}
               alt={alt}
               height={240}
               width={240}
