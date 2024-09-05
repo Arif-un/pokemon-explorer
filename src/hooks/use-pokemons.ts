@@ -7,10 +7,10 @@ export const usePokemons = ({
   limit = DEFAULT_POKEMON_FETCH_LIMIT,
   offset = DEFAULT_POKEMON_FETCH_OFFSET
 }) => {
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, isError, error } = useQuery({
     queryKey: ['pokemons', limit, offset],
     queryFn: () => fetchPokemons({ limit, offset }),
     staleTime: 5 * 60 * 1000
   })
-  return { pokemons: data?.results, totalItems: data?.count, isLoading }
+  return { pokemons: data?.results, totalItems: data?.count, isLoading, isError, error }
 }
