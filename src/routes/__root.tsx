@@ -1,10 +1,11 @@
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import { Outlet, createRootRoute } from '@tanstack/react-router'
+import { Outlet, ScrollRestoration, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import { useAtomValue } from 'jotai'
 
 import Footer from '@/components/footer/footer'
 import NavBar from '@/components/nav-bar/nav-bar'
+import ScrollToTop from '@/components/scroll-to-top-button/scroll-to-top-button'
 import themeAtom from '@/global-states/theme-atom'
 
 export const Route = createRootRoute({
@@ -19,14 +20,16 @@ function RootComponent() {
 
   return (
     <div
-      className={`flex flex-col min-h-screen ${darkThemeClass} bg-slate-200 dark:bg-slate-950 transition-all`}
+      className={`flex flex-col items-center min-h-screen bg-image ${darkThemeClass} bg-slate-200 dark:bg-slate-950 transition-all`}
     >
+      <ScrollRestoration getKey={location => location.pathname} />
       <NavBar />
 
-      <main className="flex-grow">
+      <main className="flex-grow w-5/6">
         <Outlet />
       </main>
 
+      <ScrollToTop />
       <Footer />
 
       <ReactQueryDevtools buttonPosition="top-right" />
