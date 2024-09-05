@@ -8,6 +8,7 @@ import promise from 'eslint-plugin-promise'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import unusedImports from 'eslint-plugin-unused-imports'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
@@ -15,12 +16,15 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
+
   {
     ignores: [
       '**/vite.config.ts',
       '**/commitlint.config.js',
       '**/node_modules',
       '**/build',
+      '**/dist/**',
+      'dist/**',
       '**/coverage'
     ],
     languageOptions: {
@@ -40,7 +44,8 @@ export default tseslint.config(
       prettier,
       promise,
       stylisticTs,
-      'react-refresh': reactRefresh
+      'react-refresh': reactRefresh,
+      'unused-imports': unusedImports
     },
     settings: {
       react: { version: 'detect' },
@@ -54,6 +59,7 @@ export default tseslint.config(
       allowImplicit: 0,
       semi: ['error', 'never'],
       camelcase: ['error', { properties: 'never' }],
+      'unused-imports/no-unused-imports': 'error',
 
       'react/require-default-props': [0, { functions: 'ignore' }],
 
