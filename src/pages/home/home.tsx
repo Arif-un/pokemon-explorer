@@ -10,7 +10,7 @@ import { DEFAULT_POKEMON_FETCH_LIMIT, DEFAULT_POKEMON_FETCH_OFFSET } from '@/uti
 export default function Home() {
   const { limit, offset } = RootRoute.useSearch<{ limit?: number; offset?: number }>()
   const totalItemsCached = useRef(0)
-  const { pokemons, totalItems, isLoading } = usePokemons({ limit, offset })
+  const { pokemons, totalItems, isLoading, isError, error } = usePokemons({ limit, offset })
   const navigate = RootRoute.useNavigate()
 
   if (!isLoading && totalItemsCached.current !== totalItems) {
@@ -18,16 +18,24 @@ export default function Home() {
   }
 
   const handleOffsetChange = (newOffset: number) => {
-    navigate({ search: { limit, offset: newOffset } })
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    navigate({ search: { limit, offset: newOffset }, resetScroll: false })
   }
 
   const handleItemsPerPageChange = (newItemsPerPage: number) => {
     navigate({ search: { limit: newItemsPerPage, offset: DEFAULT_POKEMON_FETCH_OFFSET } })
   }
 
+  if (isError) {
+    return (
+      <div>
+        <h2>Error occurred:</h2>
+        <p>{error?.message}</p>
+      </div>
+    )
+  }
+
   return (
-    <div className="p-2">
+    <div>
       <PokemonList
         pokemons={pokemons}
         limit={limit || DEFAULT_POKEMON_FETCH_LIMIT}
