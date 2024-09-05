@@ -1,6 +1,15 @@
+import { type PokemonType } from '@/utils/constants'
+
 export interface Pokemon {
   name: string
   url: string
+}
+
+export interface PokemonResponse {
+  count: number
+  next: string
+  previous: string
+  results: Pokemon[]
 }
 
 export interface PokemonDetailsResponse {
@@ -27,13 +36,16 @@ export interface PokemonDetailsResponse {
 }
 
 export interface Ability {
-  ability?: Species
+  ability: {
+    name: string
+    url: string
+  }
   is_hidden?: boolean
   slot?: number
 }
 
 export interface Species {
-  name?: string
+  name?: 'hp' | 'attack' | 'defense' | 'special-attack' | 'special-defense' | 'speed'
   url?: string
 }
 
@@ -189,5 +201,8 @@ export interface Stat {
 
 export interface Type {
   slot?: number
-  type?: Species
+  type?: {
+    name?: PokemonType
+    url?: string
+  }
 }
