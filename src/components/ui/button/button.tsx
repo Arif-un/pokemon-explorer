@@ -10,7 +10,7 @@ const buttonClasses = {
   disabled: 'disabled:opacity-50 bg-slate-50',
   variants: {
     default:
-      'bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800',
+      'bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition',
     primary: 'bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700'
   }
 }
