@@ -3,7 +3,7 @@ import { Outlet, ScrollRestoration, createRootRoute } from '@tanstack/react-rout
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import { useAtomValue } from 'jotai'
 
-import Footer from '@/components/footer/footer'
+import Footer from '@/components/footer/'
 import NavBar from '@/components/nav-bar/nav-bar'
 import ScrollToTop from '@/components/scroll-to-top-button/scroll-to-top-button'
 import themeAtom from '@/global-states/theme-atom'
