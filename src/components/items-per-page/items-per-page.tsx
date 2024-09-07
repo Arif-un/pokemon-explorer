@@ -15,7 +15,7 @@ export default function ItemsPerPage({ itemsPerPage, onItemsPerPageChange }: Ite
         value={itemsPerPage}
         onChange={handleItemsPerPageChange}
         name="items-per-page"
-        className="p-2 rounded-full cursor-pointer border border-slate-200 bg-slate-50 text-slate-800 focus-visible:outline-1 outline-blue-500 outline-offset-1 dark:bg-slate-900 dark:text-slate-100 dark:border-slate-800"
+        className="p-2 rounded-full cursor-pointer border border-slate-200 bg-slate-50 text-slate-800 focus:outline-none focus-visible:ring-2 ring-yellow-500  dark:bg-slate-900 dark:text-slate-100 dark:border-slate-800"
       >
         <option value="20">20</option>
         <option value="50">50</option>
