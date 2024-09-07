@@ -19,7 +19,7 @@ export default function Search() {
     navigate({
       search: prv => ({
         ...prv,
-        name: debouncedValue || undefined,
+        name: debouncedValue?.toLowerCase() || undefined,
         offset: undefined
       }),
       resetScroll: false
