@@ -1,6 +1,6 @@
 import { type AnimationControls, motion } from 'framer-motion'
 
-import TiltCard from '@/components/ui/tilt-card/tilt-card'
+import TiltCard from '@/components/ui/tilt-card'
 
 interface ImageCardProps {
   animationControls: AnimationControls
