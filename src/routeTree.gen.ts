@@ -49,10 +49,42 @@ declare module '@tanstack/react-router' {
 
 // Create and export the route tree
 
-export const routeTree = rootRoute.addChildren({
-  IndexRoute,
-  PokemonDetailsNameLazyRoute
-})
+export interface FileRoutesByFullPath {
+  '/': typeof IndexRoute
+  '/pokemon-details/$name': typeof PokemonDetailsNameLazyRoute
+}
+
+export interface FileRoutesByTo {
+  '/': typeof IndexRoute
+  '/pokemon-details/$name': typeof PokemonDetailsNameLazyRoute
+}
+
+export interface FileRoutesById {
+  __root__: typeof rootRoute
+  '/': typeof IndexRoute
+  '/pokemon-details/$name': typeof PokemonDetailsNameLazyRoute
+}
+
+export interface FileRouteTypes {
+  fileRoutesByFullPath: FileRoutesByFullPath
+  fullPaths: '/' | '/pokemon-details/$name'
+  fileRoutesByTo: FileRoutesByTo
+  to: '/' | '/pokemon-details/$name'
+  id: '__root__' | '/' | '/pokemon-details/$name'
+  fileRoutesById: FileRoutesById
+}
+
+export interface RootRouteChildren {
+  IndexRoute: typeof IndexRoute
+  PokemonDetailsNameLazyRoute: typeof PokemonDetailsNameLazyRoute
+}
+
+const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
+  PokemonDetailsNameLazyRoute: PokemonDetailsNameLazyRoute
+}
+
+export const routeTree = rootRoute._addFileChildren(rootRouteChildren)._addFileTypes<FileRouteTypes>()
 
 /* prettier-ignore-end */
 
