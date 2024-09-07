@@ -60,7 +60,6 @@ export default tseslint.config(
       semi: ['error', 'never'],
       camelcase: ['error', { properties: 'never' }],
       'unused-imports/no-unused-imports': 'error',
-
       'react/require-default-props': [0, { functions: 'ignore' }],
 
       'react/no-unescaped-entities': [
@@ -111,7 +110,18 @@ export default tseslint.config(
       'import/no-import-module-exports': 'error',
       'import/newline-after-import': 'error',
       'import/no-useless-path-segments': ['error', { noUselessIndex: true }],
-      '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true
+        }
+      ],
       '@typescript-eslint/indent': 'off',
       '@typescript-eslint/semi': 'off',
       'prettier/prettier': ['warn', {}],
