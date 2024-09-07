@@ -32,8 +32,12 @@ function RootComponent() {
       <ScrollToTop />
       <Footer />
 
-      <ReactQueryDevtools buttonPosition="top-right" />
-      <TanStackRouterDevtools />
+      {import.meta.env.MODE === 'development' && (
+        <>
+          <ReactQueryDevtools buttonPosition="top-right" />
+          <TanStackRouterDevtools />
+        </>
+      )}
     </div>
   )
 }
