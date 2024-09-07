@@ -1,36 +1,27 @@
-import { memo, useCallback } from 'react'
+import { memo } from 'react'
 
 import { Link } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
 
 import pokemonLoader from '@/assets/pokemon-loader.svg'
 import TiltCard from '@/components/ui/tilt-card/tilt-card'
-import { usePokemonDetails } from '@/hooks/use-pokemon-details'
-import { pickPokemonImage } from '@/utils/query-helpers'
+import { useImageLoader } from '@/hooks/use-image-loader'
 
 import CardImage from './card-image'
-import { CardTitle } from './card-title'
+import CardTitle from './card-title'
 
 interface PokemonPreviewCardProps {
   name: string
+  image: string
 }
 
-function PokemonPreviewCard({ name }: PokemonPreviewCardProps) {
-  const {
-    data: pokemonImage,
-    isLoading,
-    isError,
-    error
-  } = usePokemonDetails<string>(name, useCallback(pickPokemonImage, [name]))
+function PokemonPreviewCard({ name, image }: PokemonPreviewCardProps) {
   const isLongText = name.length > 22
 
-  if (isError) {
-    return (
-      <div>
-        <h2>Error occurred:</h2>
-        <p>{error?.message}</p>
-      </div>
-    )
+  const { src: pokemonImgSrc, error } = useImageLoader(image, pokemonLoader)
+
+  if (error) {
+    console.error(error)
   }
 
   return (
@@ -46,12 +37,7 @@ function PokemonPreviewCard({ name }: PokemonPreviewCardProps) {
         className="inner-glow bg-slate-800 inline-flex flex-col justify-center group cursor-pointer  dark:bg-slate-900 p-2 dark:text-slate-50 rounded-3xl dark:border-slate-800 border"
       >
         <TiltCard>
-          <CardImage
-            src={pokemonImage}
-            fallbackImg={pokemonLoader}
-            alt={`${name} image`}
-            isLoading={isLoading}
-          />
+          <CardImage src={pokemonImgSrc} alt={`${name} image`} />
 
           <CardTitle className={isLongText ? 'text-base' : 'text-xl'} id={name}>
             {name}

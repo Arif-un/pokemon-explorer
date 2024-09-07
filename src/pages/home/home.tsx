@@ -1,28 +1,40 @@
 import { useRef } from 'react'
 
-import ItemsPerPage from '@/components/items-per-page/items-per-page'
+import { useNavigate, useSearch } from '@tanstack/react-router'
+import { Loader } from 'lucide-react'
+
+import ItemsPerPage from '@/components/items-per-page'
 import Pagination from '@/components/pagination'
 import PokemonList from '@/components/pokemon/pokemon-list'
+import SortPokemons from '@/components/pokemon/sort-pokemons'
+import TypeFilter from '@/components/pokemon/type-filter'
+import Search from '@/components/search'
 import { usePokemons } from '@/hooks/use-pokemons'
-import { Route as RootRoute } from '@/routes'
+import { type QueryParams } from '@/types/Common'
 import { DEFAULT_POKEMON_FETCH_LIMIT, DEFAULT_POKEMON_FETCH_OFFSET } from '@/utils/constants'
 
 export default function Home() {
-  const { limit, offset } = RootRoute.useSearch<{ limit?: number; offset?: number }>()
+  const searchParams: QueryParams = useSearch({ strict: false })
   const totalItemsCached = useRef(0)
-  const { pokemons, totalItems, isLoading, isError, error } = usePokemons({ limit, offset })
-  const navigate = RootRoute.useNavigate()
+  const limit = searchParams.limit
+  const offset = searchParams.offset
+  const { pokemons, totalItems, isLoading, isError, error, isFetching } = usePokemons({
+    ...searchParams
+  })
+
+  const navigate = useNavigate()
 
   if (!isLoading && totalItemsCached.current !== totalItems) {
     totalItemsCached.current = totalItems || 0
   }
 
   const handleOffsetChange = (newOffset: number) => {
-    navigate({ search: { limit, offset: newOffset }, resetScroll: false })
+    navigate({ search: prv => ({ ...prv, offset: newOffset }), resetScroll: false })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const handleItemsPerPageChange = (newItemsPerPage: number) => {
-    navigate({ search: { limit: newItemsPerPage, offset: DEFAULT_POKEMON_FETCH_OFFSET } })
+    navigate({ search: prv => ({ ...prv, limit: newItemsPerPage }) })
   }
 
   if (isError) {
@@ -36,6 +48,22 @@ export default function Home() {
 
   return (
     <div>
+      {isFetching && (
+        <Loader
+          aria-label="Loading..."
+          className="mx-auto mt-40 animate-spin bg-slate-50 dark:bg-slate-900 dark:text-white border dark:border-slate-800 p-3 absolute inset-0 m-auto -top-3  rounded-full border-slate-200"
+          size={52}
+        />
+      )}
+      <div className="flex items-center justify-between mt-40 px-6">
+        <Search />
+
+        <div className="flex gap-2">
+          <TypeFilter />
+          <SortPokemons />
+        </div>
+      </div>
+
       <PokemonList
         pokemons={pokemons}
         limit={limit || DEFAULT_POKEMON_FETCH_LIMIT}

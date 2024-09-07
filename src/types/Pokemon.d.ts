@@ -1,15 +1,14 @@
 import { type PokemonType } from '@/utils/constants'
 
-export interface Pokemon {
-  name: string
-  url: string
+export interface PokemonTypeResponse {
+  pokemon_v2_type: {
+    name: string
+  }[]
 }
 
 export interface PokemonResponse {
-  count: number
-  next: string
-  previous: string
-  results: Pokemon[]
+  pokemon_aggregate: PokemonAggregate
+  pokemons: Pokemon[]
 }
 
 export interface PokemonDetailsResponse {
@@ -205,4 +204,30 @@ export interface Type {
     name?: PokemonType
     url?: string
   }
+}
+
+export interface TypeV2 {
+  pokemon_v2_type: PokemonV2Type
+}
+
+export interface PokemonV2Type {
+  name: string
+}
+
+export interface PokemonAggregate {
+  aggregate: Aggregate
+}
+
+export interface Aggregate {
+  count: number
+}
+
+export interface Pokemon {
+  name: string
+  sprites: Sprite[]
+  types: TypeV2[]
+}
+
+export interface Sprite {
+  sprites: Sprites
 }

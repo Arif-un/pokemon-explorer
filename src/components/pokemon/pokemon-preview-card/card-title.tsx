@@ -9,7 +9,7 @@ interface CardTitleProps {
   className?: string
 }
 
-export function CardTitle({ id, children, className }: CardTitleProps) {
+export default function CardTitle({ id, children, className }: CardTitleProps) {
   return (
     <div className="flex items-center justify-center gap-2">
       <motion.h3

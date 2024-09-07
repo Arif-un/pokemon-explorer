@@ -3,7 +3,7 @@
 exports[`PokemonList > renders empty list when no pokemons are provided 1`] = `
 <section
   aria-label="List of Pokémon"
-  class="mt-56 p-2"
+  class="mt-24 p-2"
 >
   <ul
     class="flex justify-center gap-x-10 gap-y-28 flex-wrap"
@@ -15,7 +15,7 @@ exports[`PokemonList > renders loading state correctly 1`] = `
 <DocumentFragment>
   <section
     aria-label="List of Pokémon"
-    class="mt-56 p-2"
+    class="mt-24 p-2"
   >
     <ul
       class="flex justify-center gap-x-10 gap-y-28 flex-wrap"
@@ -77,7 +77,7 @@ exports[`PokemonList > renders pokemon list correctly 1`] = `
 <DocumentFragment>
   <section
     aria-label="List of Pokémon"
-    class="mt-56 p-2"
+    class="mt-24 p-2"
   >
     <ul
       class="flex justify-center gap-x-10 gap-y-28 flex-wrap"

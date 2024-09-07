@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders SortPokemons correctly and matches snapshot 1`] = `
+<div>
+  <div
+    class="w-11 inline-block"
+  >
+    <div
+      class="relative"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-expanded="false"
+        class="rounded-full size-11 focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-0 data-[focus]:outline-yellow-500"
+        data-headlessui-state=""
+        id="headlessui-combobox-input-:r2:"
+        readonly=""
+        role="combobox"
+        type="text"
+        value=""
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="size-11 rounded-full flex items-center justify-center absolute inset-0 m-auto  dark:bg-slate-900 border dark:border-slate-800 dark:hover:bg-slate-800 bg-slate-50 hover:bg-slate-100 border-slate-300"
+        data-headlessui-state=""
+        id="headlessui-combobox-button-:r3:"
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          class="lucide lucide-arrow-down-wide-narrow size-4 dark:text-slate-50"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m3 16 4 4 4-4"
+          />
+          <path
+            d="M7 20V4"
+          />
+          <path
+            d="M11 4h10"
+          />
+          <path
+            d="M11 8h7"
+          />
+          <path
+            d="M11 12h4"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,7 @@
+import { type QueryKey } from '@tanstack/react-query'
+
 import pokemonPlaceholder from '@/assets/Pokeball.svg'
-import { type PokemonDetailsResponse } from '@/types/Pokemon'
+import { type Pokemon, type PokemonDetailsResponse, type PokemonResponse } from '@/types/Pokemon'
 
 import { POKEMON_STATS, TYPE_COLORS, TYPE_ICONS } from './constants'
 
@@ -16,8 +18,10 @@ export interface PokemonTypes {
   color?: string
 }
 
-export function pickPokemonImage(pokemonDetails: PokemonDetailsResponse) {
-  const images = pokemonDetails?.sprites
+export function pickPokemonImage(pokemonDetails: Pokemon | PokemonDetailsResponse) {
+  const images = Array.isArray(pokemonDetails?.sprites)
+    ? pokemonDetails.sprites[0]?.sprites
+    : pokemonDetails?.sprites
 
   return (
     images?.other?.['official-artwork']?.front_shiny ||
@@ -54,4 +58,41 @@ export function preparePokemonDetails(pokemonDetails: PokemonDetailsResponse) {
   }, [])
 
   return { id, image, types, abilities, baseStats }
+}
+
+export function transformTypeFromCacheData(data: { pokemon_v2_type: { name: string } }[]) {
+  return data.map(item => ({
+    type: {
+      name: item.pokemon_v2_type.name
+    }
+  }))
+}
+
+function findPokemonInCache(
+  queriesData: [QueryKey, PokemonResponse | undefined][],
+  pokemonName: string
+) {
+  for (const queryData of queriesData) {
+    const cachedPokemon = queryData?.[1]?.pokemons?.find(pokemon => pokemon.name === pokemonName)
+    if (cachedPokemon) return cachedPokemon
+  }
+  return null
+}
+
+export function preparePokemonDetailsInitialData(
+  name: string,
+  cachedPokemonQueries: [QueryKey, PokemonResponse | undefined][]
+) {
+  const cachedPokemon = findPokemonInCache(cachedPokemonQueries, name)
+
+  if (!cachedPokemon) return
+
+  const { sprites, types } = cachedPokemon
+  const transformedSprites = sprites?.[0]?.sprites || null
+  const transformedTypes = transformTypeFromCacheData(types)
+
+  return {
+    sprites: transformedSprites,
+    types: transformedTypes
+  } as PokemonDetailsResponse
 }

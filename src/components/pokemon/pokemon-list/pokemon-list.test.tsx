@@ -3,35 +3,88 @@ import { type HTMLProps } from 'react'
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 
-import * as usePokemonDetailsHook from '@/hooks/use-pokemon-details'
+import { useImageLoader } from '@/hooks/use-image-loader'
+import { type Pokemon } from '@/types/Pokemon'
+import { pickPokemonImage } from '@/utils/query-helpers'
 
 import PokemonList from './pokemon-list'
 
 vi.mock('@tanstack/react-router', () => ({
-  Link: ({ children, ...props }: HTMLProps<HTMLAnchorElement>) => <a {...props}>{children}</a>
+  Link: ({ children, search, ...props }: HTMLProps<HTMLAnchorElement> & { search: string }) => (
+    <a {...props}>{children}</a>
+  )
 }))
 
-vi.mock('@/hooks/use-pokemon-details', () => ({
-  usePokemonDetails: vi.fn()
+vi.mock('@/hooks/use-image-loader', () => ({
+  useImageLoader: vi.fn()
 }))
 
 describe('PokemonList', () => {
-  const mockPokemons = [
-    { name: 'bulbasaur', url: 'https://pokeapi.co/api/v2/pokemon/1/' },
-    { name: 'charmander', url: 'https://pokeapi.co/api/v2/pokemon/4/' },
-    { name: 'squirtle', url: 'https://pokeapi.co/api/v2/pokemon/7/' }
+  const mockPokemons: Pokemon[] = [
+    {
+      name: 'bulbasaur',
+      sprites: [
+        {
+          sprites: {
+            other: {
+              'official-artwork': {
+                front_shiny: 'https://example.com/pokemon.png'
+              }
+            }
+          }
+        }
+      ],
+      types: [
+        {
+          pokemon_v2_type: {
+            name: 'grass'
+          }
+        }
+      ]
+    },
+    {
+      name: 'charmander',
+      sprites: [
+        {
+          sprites: {
+            other: {
+              'official-artwork': {
+                front_shiny: 'https://example.com/pokemon.png'
+              }
+            }
+          }
+        }
+      ],
+      types: [
+        {
+          pokemon_v2_type: {
+            name: 'grass'
+          }
+        }
+      ]
+    },
+    {
+      name: 'squirtle',
+      sprites: [
+        {
+          sprites: {
+            other: {
+              'official-artwork': {
+                front_shiny: 'https://example.com/pokemon.png'
+              }
+            }
+          }
+        }
+      ],
+      types: [
+        {
+          pokemon_v2_type: {
+            name: 'grass'
+          }
+        }
+      ]
+    }
   ]
-
-  const mockPokemonDetails = 'https://example.com/pokemon.png'
-
-  beforeEach(() => {
-    vi.mocked(usePokemonDetailsHook.usePokemonDetails).mockReturnValue({
-      data: mockPokemonDetails,
-      isLoading: false,
-      isError: false,
-      error: null
-    })
-  })
 
   it('renders loading state correctly', () => {
     const { asFragment } = render(<PokemonList pokemons={[]} isLoading={true} limit={3} />)
@@ -40,6 +93,11 @@ describe('PokemonList', () => {
   })
 
   it('renders pokemon list correctly', () => {
+    vi.mocked(useImageLoader).mockReturnValue({
+      src: pickPokemonImage(mockPokemons[0]),
+      isLoading: false,
+      error: null
+    })
     const { asFragment } = render(<PokemonList pokemons={mockPokemons} isLoading={false} limit={3} />)
 
     mockPokemons.forEach(pokemon => {
@@ -61,16 +119,6 @@ describe('PokemonList', () => {
     })
   })
 
-  it('calls usePokemonDetails with correct pokemon names', () => {
-    render(<PokemonList pokemons={mockPokemons} isLoading={false} limit={3} />)
-    mockPokemons.forEach(pokemon => {
-      expect(usePokemonDetailsHook.usePokemonDetails).toHaveBeenCalledWith(
-        pokemon.name,
-        expect.any(Function)
-      )
-    })
-  })
-
   it('renders empty list when no pokemons are provided', () => {
     const { container } = render(<PokemonList pokemons={[]} isLoading={false} limit={3} />)
     expect(screen.getByLabelText('List of Pokémon').querySelector('ul')?.childNodes).toHaveLength(0)
@@ -78,6 +126,11 @@ describe('PokemonList', () => {
   })
 
   it('renders PokemonPreviewCards with correct image sources', () => {
+    vi.mocked(useImageLoader).mockReturnValue({
+      src: pickPokemonImage(mockPokemons[0]),
+      isLoading: false,
+      error: null
+    })
     render(<PokemonList pokemons={mockPokemons} isLoading={false} limit={3} />)
     const images = screen.getAllByRole('img')
     images.forEach(img => {

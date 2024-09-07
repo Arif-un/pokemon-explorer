@@ -13,7 +13,7 @@ exports[`PokemonDetails > renders pokemon details correctly 1`] = `
           style="opacity: 0; will-change: opacity;"
         >
           <button
-            class="px-4 py-2 flex items-center h-11 min-w-11 justify-center focus-visible:outline-1 outline-blue-500 outline-offset-1 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full mb-3"
+            class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full mb-3"
             type="button"
           >
             <svg
