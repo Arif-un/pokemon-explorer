@@ -19,6 +19,7 @@ import water from '@/assets/type-icons/water.svg'
 
 export const DEFAULT_POKEMON_FETCH_LIMIT = 20
 export const DEFAULT_POKEMON_FETCH_OFFSET = 0
+export const DEFAULT_QUERY_STALE_TIME = 5 * 60 * 1000
 
 export const TYPE_ICONS = {
   bug,
