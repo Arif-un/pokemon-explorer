@@ -13,7 +13,7 @@ exports[`Abilities Component > renders an empty list when no abilities are provi
       </h2>
       <ul
         aria-label="List of Pokemon Abilities"
-        class="flex gap-3 w-[370px] flex-wrap"
+        class="flex gap-3 w-[370px] sm:w-full flex-wrap"
       />
     </div>
   </section>
@@ -33,7 +33,7 @@ exports[`Abilities Component > renders correctly with abilities 1`] = `
       </h2>
       <ul
         aria-label="List of Pokemon Abilities"
-        class="flex gap-3 w-[370px] flex-wrap"
+        class="flex gap-3 w-[370px] sm:w-full flex-wrap"
       >
         <li
           class="capitalize flex gap-2 items-center py-1 px-3 text-indigo-700 bg-indigo-200 dark:bg-indigo-900 dark:text-indigo-100 rounded-full font-semibold"

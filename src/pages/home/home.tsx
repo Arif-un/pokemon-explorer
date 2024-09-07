@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 
 import { useNavigate, useSearch } from '@tanstack/react-router'
+import classNames from 'classnames'
 import { Loader } from 'lucide-react'
 
 import ItemsPerPage from '@/components/items-per-page'
@@ -51,11 +52,15 @@ export default function Home() {
       {isFetching && (
         <Loader
           aria-label="Loading..."
-          className="mx-auto mt-40 animate-spin bg-slate-50 dark:bg-slate-900 dark:text-white border dark:border-slate-800 p-3 absolute inset-0 m-auto -top-3  rounded-full border-slate-200"
+          className={classNames(
+            'z-50',
+            'dark:bg-slate-900 dark:text-white border dark:border-slate-800',
+            'mx-auto mt-40 sm:mt-24 animate-spin bg-slate-50 p-3 absolute inset-0 m-auto -top-3  rounded-full border-slate-200'
+          )}
           size={52}
         />
       )}
-      <div className="flex items-center justify-between mt-40 px-6">
+      <div className="flex items-center justify-between mt-40 sm:mt-28 px-6 sm:flex-col sm:gap-3">
         <Search />
 
         <div className="flex gap-2">

@@ -56,12 +56,18 @@ export default function PokemonDetails() {
 
   return (
     <>
-      <div className="p-2 mt-52 container mx-auto">
-        <div className="flex justify-center gap-14">
+      <div className="p-2 mt-52 sm:mt-20 md:mt-20 container mx-auto">
+        <div className="flex justify-center gap-14 sm:flex-col md:flex-col md:gap-0 sm:gap-0">
           <div>
             <AnimatePresence>
               {!isNavigating && (
-                <motion.div initial="hidden" animate="visible" exit="hidden" variants={fadeAnimation}>
+                <motion.div
+                  className="sm:fixed md:fixed md:top-[21px] xs:top-[2px] sm:left-4 sm:ml-3 z-50"
+                  initial="hidden"
+                  animate="visible"
+                  exit="hidden"
+                  variants={fadeAnimation}
+                >
                   <Button onClick={handleBackButton} className="mb-3" rounded>
                     <ChevronLeft /> Back
                   </Button>

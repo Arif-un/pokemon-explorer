@@ -14,11 +14,11 @@ export default function NavBar() {
   }
 
   return (
-    <nav className="container mx-auto mt-3 inset-0 flex justify-between items-center border  border-slate-200 dark:border-slate-800 px-10 h-28 rounded-3xl backdrop-blur-xl fixed z-50">
+    <nav className="container mx-auto sm:w-11/12 md:w-11/12 mt-3 inset-0 flex justify-between items-center border  border-slate-200 dark:border-slate-800 px-10 h-28 sm:h-16 md:h-16 rounded-3xl backdrop-blur-xl fixed z-50">
       <div className="w-1/3"></div>
 
       <div className="w-1/3 flex justify-center">
-        <img src={pokemonLogo} alt="Pokemon logo" className="w-60" width={240} height={89} />
+        <img src={pokemonLogo} alt="Pokemon logo" className="w-60 md:w-40" width={240} height={89} />
       </div>
 
       <div className="w-1/3 flex justify-end space-x-4">

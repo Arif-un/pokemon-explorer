@@ -31,7 +31,7 @@ export default function Abilities({ abilities, isNavigating, finishNavigation }:
               initial="hidden"
               animate={abilities && 'visible'}
               exit="hidden"
-              className="flex gap-3 w-[370px] flex-wrap"
+              className="flex gap-3 w-[370px] sm:w-full flex-wrap"
               aria-label="List of Pokemon Abilities"
             >
               {abilities?.map(ability => (

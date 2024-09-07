@@ -3,7 +3,7 @@
 exports[`Pagination Component > calls onOffsetChange with correct offset when a page button is clicked 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"
@@ -116,7 +116,7 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when a 
 exports[`Pagination Component > calls onOffsetChange with correct offset when next button is clicked 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"
@@ -229,7 +229,7 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when ne
 exports[`Pagination Component > calls onOffsetChange with correct offset when previous button is clicked 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"
@@ -380,7 +380,7 @@ exports[`Pagination Component > calls onOffsetChange with correct offset when pr
 exports[`Pagination Component > disables the next button when on the last page 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"
@@ -493,7 +493,7 @@ exports[`Pagination Component > disables the next button when on the last page 1
 exports[`Pagination Component > renders ellipsis and correct page numbers when currentPage <= 3 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"
@@ -606,7 +606,7 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
 exports[`Pagination Component > renders ellipsis and correct page numbers when currentPage >= totalPages - 2 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"
@@ -719,7 +719,7 @@ exports[`Pagination Component > renders ellipsis and correct page numbers when c
 exports[`Pagination Component > renders ellipsis on both sides when currentPage is in the middle 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"
@@ -870,7 +870,7 @@ exports[`Pagination Component > renders ellipsis on both sides when currentPage 
 exports[`Pagination Component > renders the correct number of page buttons when total pages <= 5 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center space-x-2"
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
   >
     <button
       aria-label="Previous page"

@@ -43,7 +43,7 @@ export default function Pagination({
   }
 
   return (
-    <div className="flex items-center justify-center space-x-2">
+    <div className="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3">
       <Button
         rounded
         onClick={() => onOffsetChange(Math.max(0, offset - itemsPerPage))}

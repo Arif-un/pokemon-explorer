@@ -38,7 +38,7 @@ export default function Search() {
       <input
         className={classNames(
           'h-11 inline-block rounded-full px-4 w-64 pl-10',
-          'border border-gray-300 dark:border-gray-700 bg-slate-50 dark:bg-slate-900 text-slate-950 dark:text-white',
+          'border border-slate-300 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-950 dark:text-white',
           'focus:outline-none focus:ring-2 ring-yellow-500  focus:bg-white focus:dark:bg-slate-800'
         )}
         onChange={handleSearch}
