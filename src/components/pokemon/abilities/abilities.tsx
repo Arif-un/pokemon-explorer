@@ -18,7 +18,7 @@ export default function Abilities({ abilities, isNavigating, finishNavigation }:
           <>
             <motion.h2
               initial="hidden"
-              animate="visible"
+              animate={abilities && 'visible'}
               exit="hidden"
               variants={fadeAnimation}
               className="text-slate-600 dark:text-slate-500 mb-1"
@@ -29,7 +29,7 @@ export default function Abilities({ abilities, isNavigating, finishNavigation }:
             <motion.ul
               variants={listParentAnimation}
               initial="hidden"
-              animate="visible"
+              animate={abilities && 'visible'}
               exit="hidden"
               className="flex gap-3 w-[370px] flex-wrap"
               aria-label="List of Pokemon Abilities"
