@@ -27,7 +27,7 @@ vi.mock('@/animations/common-animation', () => ({
 }))
 
 vi.mock('@/animations/stat-card-animation', () => ({
-  startCardParentAnimations: {},
+  statCardParentAnimations: {},
   statsPieItemAnimations: {}
 }))
 

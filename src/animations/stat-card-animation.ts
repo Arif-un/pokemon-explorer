@@ -1,4 +1,4 @@
-export const startCardParentAnimations = {
+export const statCardParentAnimations = {
   hidden: { opacity: 0, width: '200px' },
   visible: {
     opacity: 1,
@@ -7,7 +7,8 @@ export const startCardParentAnimations = {
       delay: 0.2,
       staggerChildren: 0.2
     }
-  }
+  },
+  exit: { opacity: 0, transition: { duration: 0.2 } }
 }
 
 export const statsPieItemAnimations = {

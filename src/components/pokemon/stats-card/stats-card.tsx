@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 
 import { fadeAnimation } from '@/animations/common-animation'
-import { startCardParentAnimations, statsPieItemAnimations } from '@/animations/stat-card-animation'
+import { statCardParentAnimations, statsPieItemAnimations } from '@/animations/stat-card-animation'
 import { StatPie } from '@/pages/pokemon-details/stat-pie'
 import { type Stats } from '@/utils/query-helpers'
 
@@ -19,7 +19,7 @@ export default function StatsCard({ baseStats, isNavigating, finishNavigation }:
           <>
             <motion.h2
               initial="hidden"
-              animate="visible"
+              animate={baseStats && 'visible'}
               exit="hidden"
               variants={fadeAnimation}
               className="text-slate-600 dark:text-slate-500 mb-1"
@@ -28,9 +28,9 @@ export default function StatsCard({ baseStats, isNavigating, finishNavigation }:
             </motion.h2>
             <motion.ul
               initial="hidden"
-              animate="visible"
-              exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              variants={startCardParentAnimations}
+              animate={baseStats && 'visible'}
+              exit="exit"
+              variants={statCardParentAnimations}
               className="grid grid-cols-3 gap-y-6 gap-x-4 border dark:border-slate-800 bg-slate-100 bg-opacity-70 dark:bg-slate-900 p-4 rounded-xl"
               aria-label="List of Pokemon Base Stats"
             >
