@@ -3,7 +3,7 @@ import { forwardRef } from 'react'
 import classNames from 'classnames'
 
 const buttonClasses = {
-  focusVisible: 'focus-visible:outline-1 outline-blue-500 outline-offset-1',
+  focusVisible: 'outline-none focus:ring-2 ring-yellow-500',
   base: 'px-4 py-2 flex items-center h-11 min-w-11 justify-center',
   icon: 'size-11 flex justify-center items-center rounded-full',
   rounded: 'rounded-full',
