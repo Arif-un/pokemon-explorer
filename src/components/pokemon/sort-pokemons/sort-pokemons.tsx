@@ -1,6 +1,5 @@
 import { type ReactNode } from 'react'
 import { useState } from 'react'
-import { useSearchParam } from 'react-use'
 
 import {
   Combobox,
@@ -9,9 +8,17 @@ import {
   ComboboxOption,
   ComboboxOptions
 } from '@headlessui/react'
-import { useNavigate } from '@tanstack/react-router'
+import { useNavigate, useSearch } from '@tanstack/react-router'
 import classNames from 'classnames'
 import { Check, SortAsc, SortDescIcon } from 'lucide-react'
+
+export const SORT_OPTIONS: SortOption[] = [
+  { name: 'None', value: undefined },
+  { name: 'Name Asc', value: 'name-asc', icon: <SortAsc size={14} />, iconText: 'A->Z' },
+  { name: 'Name Desc', value: 'name-desc', icon: <SortDescIcon size={14} />, iconText: 'Z->A' },
+  { name: 'Height Asc', value: 'height-asc', icon: <SortAsc size={14} />, iconText: 'S->B' },
+  { name: 'Height Desc', value: 'height-desc', icon: <SortDescIcon size={14} />, iconText: 'B->S' }
+] as const
 
 interface SortOption {
   name: string
@@ -20,19 +27,11 @@ interface SortOption {
   iconText?: string
 }
 
-const SORT_OPTIONS: SortOption[] = [
-  { name: 'None', value: undefined },
-  { name: 'Name Asc', value: 'name-asc', icon: <SortAsc size={14} />, iconText: 'A->Z' },
-  { name: 'Name Desc', value: 'name-desc', icon: <SortDescIcon size={14} />, iconText: 'Z->A' },
-  { name: 'Height Asc', value: 'height-asc', icon: <SortAsc size={14} />, iconText: 'S->B' },
-  { name: 'Height Desc', value: 'height-desc', icon: <SortDescIcon size={14} />, iconText: 'B->S' }
-]
-
 export default function SortPokemons() {
-  const sortParam = useSearchParam('sort')
-  const defaultSort = SORT_OPTIONS.find(option => option.value === sortParam)
+  const { sort } = useSearch({ from: '/' })
+  const defaultSort = SORT_OPTIONS.find(option => option.value === sort)
   const [selected, setSelected] = useState<SortOption | undefined>(defaultSort || SORT_OPTIONS[0])
-  const navigate = useNavigate()
+  const navigate = useNavigate({ from: '/' })
 
   const handleOnChange = (value: SortOption) => {
     setSelected(value)

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useSearchParam } from 'react-use'
 
 import {
   Combobox,
@@ -8,19 +7,24 @@ import {
   ComboboxOption,
   ComboboxOptions
 } from '@headlessui/react'
-import { useNavigate } from '@tanstack/react-router'
+import { useNavigate, useSearch } from '@tanstack/react-router'
 import classNames from 'classnames'
 import { Check, ChevronDown } from 'lucide-react'
 
 import { usePokemonTypes } from '@/hooks/use-pokemon-types'
-import { type PokemonType, TYPE_COLORS, TYPE_ICONS } from '@/utils/constants'
+import {
+  DEFAULT_POKEMON_FETCH_OFFSET,
+  type PokemonType,
+  TYPE_COLORS,
+  TYPE_ICONS
+} from '@/utils/constants'
 
 export default function TypeFilter() {
-  const typesParam = useSearchParam('types')
-  const typesParamArray = typesParam ? typesParam?.split('-') : []
+  const { type } = useSearch({ from: '/' })
+  const typesParamArray = type ? type?.split('-') : []
   const [selected, setSelected] = useState<string[]>(typesParamArray)
   const { types, isLoading, error, isError } = usePokemonTypes()
-  const navigate = useNavigate()
+  const navigate = useNavigate({ from: '/' })
 
   if (isError) {
     console.error({ error })
@@ -32,7 +36,7 @@ export default function TypeFilter() {
       search: prv => ({
         ...prv,
         types: value.join('-') || undefined,
-        offset: undefined
+        offset: DEFAULT_POKEMON_FETCH_OFFSET
       }),
       resetScroll: false
     })

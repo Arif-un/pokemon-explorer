@@ -5,13 +5,15 @@ import { useNavigate, useSearch } from '@tanstack/react-router'
 import classNames from 'classnames'
 import { SearchIcon } from 'lucide-react'
 
+import { DEFAULT_POKEMON_FETCH_OFFSET } from '@/utils/constants'
+
 const SEARCH_DEBOUNCE = 300
 
 export default function Search() {
-  const searchParams: { name?: string } = useSearch({ strict: false })
-  const [searchQuery, setSearchQuery] = useState(searchParams.name || '')
+  const { name: searchName } = useSearch({ from: '/' })
+  const [searchQuery, setSearchQuery] = useState(searchName || '')
   const [debouncedValue, setDebouncedValue] = useState('')
-  const navigate = useNavigate()
+  const navigate = useNavigate({ from: '/' })
   const isFirstRender = useRef(true)
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function Search() {
       search: prv => ({
         ...prv,
         name: debouncedValue?.toLowerCase() || undefined,
-        offset: undefined
+        offset: DEFAULT_POKEMON_FETCH_OFFSET
       }),
       resetScroll: false
     })

@@ -11,19 +11,17 @@ import SortPokemons from '@/components/pokemon/sort-pokemons'
 import TypeFilter from '@/components/pokemon/type-filter'
 import Search from '@/components/search'
 import { usePokemons } from '@/hooks/use-pokemons'
-import { type QueryParams } from '@/types/Common'
 import { DEFAULT_POKEMON_FETCH_LIMIT, DEFAULT_POKEMON_FETCH_OFFSET } from '@/utils/constants'
 
 export default function Home() {
-  const searchParams: QueryParams = useSearch({ strict: false })
   const totalItemsCached = useRef(0)
-  const limit = searchParams.limit
-  const offset = searchParams.offset
+  const { limit, offset, ...restParams } = useSearch({ from: '/' })
+  const navigate = useNavigate({ from: '/' })
   const { pokemons, totalItems, isLoading, isError, error, isFetching } = usePokemons({
-    ...searchParams
+    limit,
+    offset,
+    ...restParams
   })
-
-  const navigate = useNavigate()
 
   if (!isLoading && totalItemsCached.current !== totalItems) {
     totalItemsCached.current = totalItems || 0
