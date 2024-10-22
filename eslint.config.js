@@ -23,6 +23,7 @@ export default tseslint.config(
       '**/commitlint.config.js',
       '**/node_modules',
       '**/build',
+      '**/build/**',
       '**/dist/**',
       'dist/**',
       '**/coverage'
