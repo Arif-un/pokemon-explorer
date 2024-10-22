@@ -1,0 +1,948 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Pagination Component > calls onOffsetChange with correct offset when a page button is clicked 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      disabled=""
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      1
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      2
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      3
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component > calls onOffsetChange with correct offset when next button is clicked 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      disabled=""
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      1
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      2
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      3
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component > calls onOffsetChange with correct offset when previous button is clicked 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      1
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      3
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      4
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      5
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component > disables the next button when on the last page 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      1
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      8
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      9
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      disabled=""
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component > renders ellipsis and correct page numbers when currentPage <= 3 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      disabled=""
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      1
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      2
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      3
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component > renders ellipsis and correct page numbers when currentPage >= totalPages - 2 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      1
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      8
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      9
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      disabled=""
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component > renders ellipsis on both sides when currentPage is in the middle 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      1
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      5
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      6
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      7
+    </button>
+    <span
+      class="px-2 dark:text-slate-100"
+      title="More pages"
+    >
+      <svg
+        class="lucide lucide-ellipsis"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="5"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </span>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component > renders the correct number of page buttons when total pages <= 5 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center space-x-2 sm:flex-wrap sm:gap-y-3"
+  >
+    <button
+      aria-label="Previous page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      disabled=""
+      type="button"
+    >
+      <svg
+        class="lucide lucide-chevron-left"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+       Prev
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-yellow-500 text-black hover:bg-yellow-600 border-yellow-700 rounded-full font-semibold"
+      type="button"
+    >
+      1
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      2
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      3
+    </button>
+    <button
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      4
+    </button>
+    <button
+      aria-label="Next page"
+      class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full"
+      type="button"
+    >
+      Next 
+      <svg
+        class="lucide lucide-chevron-right"
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
