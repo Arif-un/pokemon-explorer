@@ -41,11 +41,11 @@ jobs:
       - name: Run tests and linter concurrently
         run: pnpm run test & pnpm run lint
 
-      - name: Build the project
-        run: npm run build
+      # - name: Build the project
+      #   run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./build
