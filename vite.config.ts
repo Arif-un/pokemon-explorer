@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'development' ? undefined : 'pokemon-explorer',
+  base: mode === 'production' ? 'pokemon-explorer' : undefined,
   plugins: [TanStackRouterVite(), react()],
   resolve: {
     alias: {
@@ -12,5 +12,13 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: 'build'
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './vitest.setup.ts',
+    coverage: {
+      reporter: ['text']
+    }
   }
 }))
