@@ -1,6 +1,6 @@
 # Pokémon Explorer
 
-<img src="https://github.com/Arif-un/pokemon-explorer/blob/main/screenshot.png?raw=true" alt="Pokemon website screenshot" />
+<img src="https://github.com/Arif-un/pokemon-explorer/blob/main/screenshot.jpg?raw=true" alt="Pokemon website screenshot" />
 
 
 ## Overview
