@@ -10,7 +10,7 @@ import themeAtom from '@/global-states/theme-atom'
 
 export const Route = createRootRoute({
   component: RootComponent,
-  notFoundComponent: () => <div>Not Found</div>
+  notFoundComponent: () => <div className="bg-red-950 rounded-md ">Not Found</div>
 })
 
 function RootComponent() {
@@ -25,7 +25,7 @@ function RootComponent() {
       <ScrollRestoration getKey={location => location.pathname} />
       <NavBar />
 
-      <main className="flex-grow w-5/6">
+      <main className="flex-grow w-5/6 mt-32 sm:mt-20 md:mt-20">
         <Outlet />
       </main>
 
