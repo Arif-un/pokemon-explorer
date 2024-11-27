@@ -2,7 +2,8 @@ import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-export default defineConfig(() => ({
+export default defineConfig({
+  base: '/pokemon-explorer',
   plugins: [TanStackRouterVite(), react()],
   resolve: {
     alias: {
@@ -11,13 +12,5 @@ export default defineConfig(() => ({
   },
   build: {
     outDir: 'build'
-  },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './vitest.setup.ts',
-    coverage: {
-      reporter: ['text']
-    }
   }
-}))
+})
