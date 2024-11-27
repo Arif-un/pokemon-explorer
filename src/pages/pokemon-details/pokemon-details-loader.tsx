@@ -2,7 +2,7 @@ export default function PokemonDetailsLoader() {
   return (
     <section
       aria-label="Loading skeleton"
-      className="p-2 mt-52 container mx-auto m-auto inset-0 z-10 animate-pulse"
+      className="p-2 mt-8 container mx-auto m-auto inset-0 z-10 animate-pulse"
     >
       <div className="flex justify-center gap-14" aria-hidden="true">
         <div>

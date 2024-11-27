@@ -3,7 +3,7 @@
 exports[`PokemonDetails > renders pokemon details correctly 1`] = `
 <DocumentFragment>
   <div
-    class="p-2 mt-52 sm:mt-20 md:mt-20 container mx-auto"
+    class="p-2 mt-8 sm:mt-10 md:mt-10 container mx-auto"
   >
     <div
       class="flex justify-center gap-14 sm:flex-col md:flex-col md:gap-0 sm:gap-0"
@@ -11,7 +11,7 @@ exports[`PokemonDetails > renders pokemon details correctly 1`] = `
       <div>
         <div
           class="sm:fixed md:fixed md:top-[21px] xs:top-[2px] sm:left-4 sm:ml-3 z-50"
-          style="opacity: 0; will-change: opacity;"
+          style="opacity: 0;"
         >
           <button
             class="px-4 py-2 flex items-center h-11 min-w-11 justify-center outline-none focus:ring-2 ring-yellow-500 bg-slate-50 hover:bg-slate-100 text-slate-900 border-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-100 border dark:border-slate-800 transition rounded-full mb-3"
@@ -70,17 +70,17 @@ exports[`PokemonDetails > renders pokemon details correctly 1`] = `
         <section>
           <h2
             class="text-slate-600 dark:text-slate-500 mb-1"
-            style="opacity: 0; will-change: opacity;"
+            style="opacity: 0;"
           >
             Types
           </h2>
           <ul
             class="flex gap-3"
-            style="opacity: 0; will-change: opacity;"
+            style="opacity: 0;"
           >
             <li
               class="inline-flex justify-center items-center gap-3 p-1 rounded-full"
-              style="opacity: 0; will-change: opacity,transform; transform: translateY(15px);"
+              style="opacity: 0; transform: translateY(15px);"
             >
               <div
                 class="rounded-full p-1"
@@ -105,18 +105,18 @@ exports[`PokemonDetails > renders pokemon details correctly 1`] = `
         >
           <h2
             class="text-slate-600 dark:text-slate-500 mb-1"
-            style="opacity: 0; will-change: opacity;"
+            style="opacity: 0;"
           >
             Abilities
           </h2>
           <ul
             aria-label="List of Pokemon Abilities"
             class="flex gap-3 w-[370px] sm:w-full flex-wrap"
-            style="opacity: 0; will-change: opacity;"
+            style="opacity: 0;"
           >
             <li
               class="capitalize flex gap-2 items-center py-1 px-3 text-indigo-700 bg-indigo-200 dark:bg-indigo-900 dark:text-indigo-100 rounded-full font-semibold"
-              style="opacity: 0; will-change: opacity,transform; transform: translateY(15px);"
+              style="opacity: 0; transform: translateY(15px);"
             >
               <svg
                 class="size-5"
@@ -136,7 +136,7 @@ exports[`PokemonDetails > renders pokemon details correctly 1`] = `
             </li>
             <li
               class="capitalize flex gap-2 items-center py-1 px-3 text-indigo-700 bg-indigo-200 dark:bg-indigo-900 dark:text-indigo-100 rounded-full font-semibold"
-              style="opacity: 0; will-change: opacity,transform; transform: translateY(15px);"
+              style="opacity: 0; transform: translateY(15px);"
             >
               <svg
                 class="size-5"
@@ -159,17 +159,17 @@ exports[`PokemonDetails > renders pokemon details correctly 1`] = `
         <section>
           <h2
             class="text-slate-600 dark:text-slate-500 mb-1"
-            style="opacity: 0; will-change: opacity;"
+            style="opacity: 0;"
           >
             Stats
           </h2>
           <ul
             aria-label="List of Pokemon Base Stats"
             class="grid grid-cols-3 gap-y-6 gap-x-4 border dark:border-slate-800 bg-slate-100 bg-opacity-70 dark:bg-slate-900 p-4 rounded-xl"
-            style="opacity: 0; width: 200px; will-change: opacity;"
+            style="opacity: 0; width: 200px;"
           >
             <li
-              style="opacity: 0; will-change: opacity,transform; transform: translateY(15px);"
+              style="opacity: 0; transform: translateY(15px);"
             >
               <div
                 class="inline-flex justify-center flex-col items-center min-w-24"
@@ -218,7 +218,7 @@ exports[`PokemonDetails > renders pokemon details correctly 1`] = `
               </div>
             </li>
             <li
-              style="opacity: 0; will-change: opacity,transform; transform: translateY(15px);"
+              style="opacity: 0; transform: translateY(15px);"
             >
               <div
                 class="inline-flex justify-center flex-col items-center min-w-24"
