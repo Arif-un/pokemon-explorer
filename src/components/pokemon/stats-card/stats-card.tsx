@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { fadeAnimation } from '@/animations/common-animation'
 import { statCardParentAnimations, statsPieItemAnimations } from '@/animations/stat-card-animation'
-import { StatPie } from '@/pages/pokemon-details/stat-pie'
+import StatPie from '@/components/stat-pie/stat-pie'
 import { type Stats } from '@/utils/query-helpers'
 
 interface StatsCardProps {

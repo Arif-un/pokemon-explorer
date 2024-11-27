@@ -2,7 +2,7 @@ import { useAtomValue } from 'jotai'
 
 import themeAtom from '@/global-states/theme-atom'
 
-import StatsIcon from './stats-icon'
+import StatsIcon from '../states-icon/stats-icon'
 
 interface StatPieProps {
   value: number
@@ -11,7 +11,7 @@ interface StatPieProps {
   color: string
 }
 
-export function StatPie({ value = 0, name, percent, color }: StatPieProps) {
+export default function StatPie({ value = 0, name, percent, color }: StatPieProps) {
   const theme = useAtomValue(themeAtom)
   const isDark = theme === 'dark'
   const pieBgColor = isDark ? 'rgb(15 23 42 / 1)' : 'rgb(241 245 249 / 1)'
