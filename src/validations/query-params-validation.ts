@@ -18,8 +18,8 @@ export const QueryParamsSchema = z.object({
     .max(maxItemsPerPage)
     .default(DEFAULT_POKEMON_FETCH_LIMIT)
     .optional(),
-  offset: z.coerce.number().int().nonnegative().default(DEFAULT_POKEMON_FETCH_OFFSET)
-.optional(),
+  // eslint-disable-next-line newline-per-chained-call
+  offset: z.coerce.number().int().nonnegative().default(DEFAULT_POKEMON_FETCH_OFFSET).optional(),
   name: z
     .string()
     .trim()
