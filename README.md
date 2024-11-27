@@ -1,8 +1,8 @@
-# Pokémon Frontend Application
+# Pokémon Explorer
 
 ## Overview
 
-This project is a feature-rich frontend application that displays a comprehensive list of Pokémon and their details, including types, abilities, and stats. It's built with modern web technologies and best practices, offering a smooth and interactive user experience for Pokémon enthusiasts.
+This project is a feature-rich frontend application displaying a comprehensive Pokémon list and their details, including types, abilities, and stats. It's built with modern web technologies and best practices, offering a smooth and interactive user experience for Pokémon enthusiasts.
 
 ## Technologies Used
 
