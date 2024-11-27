@@ -2,7 +2,7 @@
   "name": "pokemon-frontend",
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://arif-un.github.io/pokemon-explorer",
+  "homepage": "https://arif-un.github.io/pokemon-explorer/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
