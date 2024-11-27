@@ -1,5 +1,8 @@
 # Pokémon Explorer
 
+<img src="https://github.com/Arif-un/pokemon-explorer/blob/main/screenshot.png?raw=true" alt="Pokemon website screenshot" />
+
+
 ## Overview
 
 This project is a feature-rich frontend application displaying a comprehensive Pokémon list and their details, including types, abilities, and stats. It's built with modern web technologies and best practices, offering a smooth and interactive user experience for Pokémon enthusiasts.
