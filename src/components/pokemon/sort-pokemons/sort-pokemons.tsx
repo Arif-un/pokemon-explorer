@@ -28,10 +28,10 @@ interface SortOption {
 }
 
 export default function SortPokemons() {
-  const { sort } = useSearch({ from: '/' })
+  const { sort } = useSearch({ from: '/pokemon-explorer/' })
   const defaultSort = SORT_OPTIONS.find(option => option.value === sort)
   const [selected, setSelected] = useState<SortOption | undefined>(defaultSort || SORT_OPTIONS[0])
-  const navigate = useNavigate({ from: '/' })
+  const navigate = useNavigate({ from: '/pokemon-explorer' })
 
   const handleOnChange = (value: SortOption) => {
     setSelected(value)

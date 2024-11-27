@@ -20,11 +20,11 @@ import {
 } from '@/utils/constants'
 
 export default function TypeFilter() {
-  const { type } = useSearch({ from: '/' })
+  const { type } = useSearch({ from: '/pokemon-explorer/' })
   const typesParamArray = type ? type?.split('-') : []
   const [selected, setSelected] = useState<string[]>(typesParamArray)
   const { types, isLoading, error, isError } = usePokemonTypes()
-  const navigate = useNavigate({ from: '/' })
+  const navigate = useNavigate({ from: '/pokemon-explorer' })
 
   if (isError) {
     console.error({ error })

@@ -1,9 +1,10 @@
-import { createFileRoute } from '@tanstack/react-router'
-
-import Home from '@/pages/home'
-import { QueryParamsSchema } from '@/validations/query-params-validation'
+import { createFileRoute, redirect } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
-  component: Home,
-  validateSearch: QueryParamsSchema
+  component: RouteComponent,
+  loader: () => redirect({ to: '/pokemon-explorer', throw: true })
 })
+
+function RouteComponent() {
+  return redirect({ to: '/pokemon-explorer' })
+}

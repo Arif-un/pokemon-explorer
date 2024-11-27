@@ -15,8 +15,8 @@ import { DEFAULT_POKEMON_FETCH_LIMIT, DEFAULT_POKEMON_FETCH_OFFSET } from '@/uti
 
 export default function Home() {
   const totalItemsCached = useRef(0)
-  const { limit, offset, ...restParams } = useSearch({ from: '/' })
-  const navigate = useNavigate({ from: '/' })
+  const { limit, offset, ...restParams } = useSearch({ from: '/pokemon-explorer/' })
+  const navigate = useNavigate({ from: '/pokemon-explorer' })
   const { pokemons, totalItems, isLoading, isError, error, isFetching } = usePokemons({
     limit,
     offset,
@@ -58,7 +58,7 @@ export default function Home() {
           size={52}
         />
       )}
-      <div className="flex items-center justify-between mt-40 sm:mt-28 px-6 sm:flex-col sm:gap-3">
+      <div className="flex items-center justify-between mt-10 sm:mt-28 px-6 sm:flex-col sm:gap-3">
         <Search />
 
         <div className="flex gap-2">

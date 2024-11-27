@@ -19,7 +19,7 @@ import { preparePokemonDetails } from '@/utils/query-helpers'
 import PokemonDetailsLoader from './pokemon-details-loader'
 
 export default function PokemonDetails() {
-  const { name } = useParams({ from: '/pokemon-details/$name' })
+  const { name } = useParams({ from: '/pokemon-explorer/pokemon-details/$name' })
   const {
     data: pokemonDetails,
     isLoading,
@@ -40,7 +40,7 @@ export default function PokemonDetails() {
 
   const handleBackButton = () => {
     controls.start({ scale: 0.7, transition: { duration: 0.2 } })
-    navigate('/')
+    navigate('/pokemon-explorer')
   }
 
   if (isLoading) return <PokemonDetailsLoader />
@@ -56,7 +56,7 @@ export default function PokemonDetails() {
 
   return (
     <>
-      <div className="p-2 mt-52 sm:mt-20 md:mt-20 container mx-auto">
+      <div className="p-2 mt-8 sm:mt-10 md:mt-10 container mx-auto">
         <div className="flex justify-center gap-14 sm:flex-col md:flex-col md:gap-0 sm:gap-0">
           <div>
             <AnimatePresence>

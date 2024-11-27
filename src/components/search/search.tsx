@@ -10,10 +10,10 @@ import { DEFAULT_POKEMON_FETCH_OFFSET } from '@/utils/constants'
 const SEARCH_DEBOUNCE = 300
 
 export default function Search() {
-  const { name: searchName } = useSearch({ from: '/' })
+  const { name: searchName } = useSearch({ from: '/pokemon-explorer/' })
   const [searchQuery, setSearchQuery] = useState(searchName || '')
   const [debouncedValue, setDebouncedValue] = useState('')
-  const navigate = useNavigate({ from: '/' })
+  const navigate = useNavigate({ from: '/pokemon-explorer' })
   const isFirstRender = useRef(true)
 
   useEffect(() => {
