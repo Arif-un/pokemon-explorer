@@ -118,3 +118,7 @@ pnpm lint
 
 - [PokéAPI](https://pokeapi.co/) for providing the Pokémon data
 - All the amazing open-source libraries and tools used in this project
+
+
+## License
+MIT
