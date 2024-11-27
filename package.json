@@ -11,7 +11,7 @@
     "test": "vitest --watch=false",
     "test:watch": "vitest",
     "test:cov": "vitest run --coverage",
-    "format": "prettier --write ."
+    "format": "prettier --write src"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.5",
