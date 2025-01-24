@@ -1,11 +1,13 @@
+import { useEffect } from 'react'
+
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Outlet, ScrollRestoration, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import { useAtomValue } from 'jotai'
 
-import Footer from '@/components/footer/'
+import Footer from '@/components/footer'
 import NavBar from '@/components/nav-bar/nav-bar'
-import ScrollToTop from '@/components/scroll-to-top-button/scroll-to-top-button'
+import ScrollToTop from '@/components/scroll-to-top-button'
 import themeAtom from '@/global-states/theme-atom'
 
 export const Route = createRootRoute({
@@ -17,6 +19,13 @@ function RootComponent() {
   const theme = useAtomValue(themeAtom)
   const isDark = theme === 'dark'
   const darkThemeClass = isDark ? 'dark' : ''
+
+  useEffect(() => {
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', isDark ? '#020617' : '#e1e7ef')
+    }
+  }, [isDark])
 
   return (
     <div
@@ -41,3 +50,5 @@ function RootComponent() {
     </div>
   )
 }
+
+export default RootComponent
