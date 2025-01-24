@@ -9,12 +9,35 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+
+  --thumb-color: #98a1ae;
+  --track-color: #e1e7ef;
+}
+
+:root:has(.dark) {
+  --thumb-color: #141c43;
+  --track-color: #020617;
 }
 
 html,
 body,
 #root {
   min-height: 100%;
+  scrollbar-color: var(--thumb-color) var(--track-color);
+
+
+  /* Safari scrollbar styles */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--thumb-color);
+  }
 }
 
 .bg-image {
